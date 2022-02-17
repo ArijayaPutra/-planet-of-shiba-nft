@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    padding: 30px 20px;
+    color: #FD7B33;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ff6e42;
+    transition: all .5s
+}
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+#Home{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(255, 99, 21), rgb(255, 162, 41)70%, white);
+    
+}
+#Concept{
+    display: flex;
+    height: 100%;
+    padding: 50px 0;
+    
+}
+#Collection{
+    display: flex;
+    height: 790px;
+    background: rgb(26, 11, 2);
+    
+}
+#Roadmap{
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    background: linear-gradient(rgb(26, 11, 2), rgb(20, 2, 44));
+}
+#Team{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+}
+.home-image{
+    max-width: 480px;
+    height: auto;
+    padding-right: 20px;
+}
+.article-home{
+    width: 40%;
+    padding: 0 20px;
+}
+.article-home h1{
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.article-home h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.article-home p{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px 0;
+}
+.mint{
+    padding: 13px 30px;
+    background: rgb(255, 80, 16);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.mint a{
+    text-decoration: none;
+    color: white;
+}
+.mint a:visited{
+    color: white;
+    text-decoration: none;
+}
+.article-concept{
+    width: 50%;
+    margin-left: 35px;
+    padding-top: 50px;
+}
+.article-concept h1{
+    font-weight: bold;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+.article-concept p{
+    padding: 15px 0;
+    line-height: 30px;
+}
+.shib-part{
+    display: flex;
+    width: 50%;
+    padding-top: 45px;
+    padding-left: 20px;
+    justify-content: center;    
+}
+.shib-icon{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 10px;
+    width: 30.33%;
+    align-items: center;
+    text-align: center;
+}
+.shib1,
+.shib2,
+.shib3{
+    width: 60%;
+}
+.shib-icon p{
+    padding: 10px 0;
+}
+.shib1-btn{
+    padding: 5px 10px;
+    background: rgb(224, 105, 62);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.shib1-btn:hover{
+    color: #472b18;
+}
+.collection-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.kayu-atas img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+.collection-content h1{
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.slider{
+    max-width: 350px;
+	margin:30px auto 0px auto;
+	overflow: hidden;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.slider .slider-items .item img{
+	max-width: 100%;
+	display: block;
+	animation:zoom 1s ease;
+}
+
+@keyframes zoom{
+	0%{transform: scale(1);opacity: 0}
+	50%{transform: scale(2);}
+	100%{transform: scale(1);opacity:1}
+}
+.slider .slider-items .item{
+	display: none;
+}
+.slider .slider-items .item.active{
+	display: block;
+}
+.desc-nft{
+    display: flex;
+    width: 40%;
+    color: white;
+    text-align: center;
+    margin: 20px auto 0px auto ;
+}
+.next-slide{
+    margin: 20px auto 20px auto ;
+    
+}
+.next-slide .next-sld{
+    padding: 5px 10px;
+    background: rgb(224, 105, 62);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.next-sld:hover{
+    color: #472b18;
+}
+.next-slide .prev-sld{
+    padding: 5px 10px;
+    background: rgb(224, 105, 62);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.prev-sld:hover{
+    color: #472b18;
+}
+.kayu-bwh img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+.article-roadmap h1{
+    font-size: 64px;
+    text-align: center;
+    color: #FD7B33;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 20px 0;
+}
+.roadmap-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.roadmap-content{
+    color: aliceblue;
+    width: 40%;
+    height: 500px;
+    overflow: scroll;
+}
+.roadmap-content h2{
+    color: orange;
+    text-align: center;
+}
+.roadmap-content p{
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.title-team h1{
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bolder;
+    letter-spacing: 30px;
+    text-align: center;
+    border-radius: 10px ;
+    padding: 10px 0;
+}
+
+.team-main{
+    display: flex;
+    justify-content: center;
+
+}
+.team-box img{
+
+    width: 100%;
+}
+.identitas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:  rgb(20, 2, 44);
+}
+.foto-diri img{
+    border-radius: 30%;
+    padding: 10px 5px;
+}
+.data-diri{
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 20px;
+    color: white;
+}
+.footer-main{
+    width: 100%;
+}
+.footer-end{
+    background: orangered;
+    color: white;
+    align-items: center;
+}
+.footer-end p{
+    padding: 20px;
+    text-align: center;
+} 
+
+@media screen and (max-width: 768px) {
+    ul li a{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+    .team-main{
+        flex-direction: column;
+    }
+    .article-home{
+        margin: 0 0;
+    }
+    .article-home h1{
+        font-size: 36px;
+    }
+    .article-home h2{
+        font-size: 32px;
+    }
+    #Concept{
+        flex-direction: column;
+        align-items: center;
+    }.article-concept{
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .desc-nft p{
+        display: none;
+      }
+    .shib-part{
+        width: 100%;
+    }
+    .shib-icon{
+        width: 100%;
+    }
+
+} 
+@media screen and (max-width: 576px){
+    .home-image{
+        display: none;
+    }
+    ul li a{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+   .article-home{
+       width: 100%;
+       text-align: center;
+   }
+   .shib-part{
+       flex-direction: column;
+       align-items: center;
+       width: 80%;
+   }
+
+  .shib-icon{
+      width: 80%;
+  }
+  .desc-nft p{
+    display: none;
+  }
+}
